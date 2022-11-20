@@ -6,21 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhando com Tabelas - Dio.me</title>
     <style>
-        table tr:nth-child(even){
-            background-color:rgba(248, 175, 230, 0.568);
+
+        table{
+            -webkit-box-shadow: 24px 9px 25px -6px rgba(168,168,168,0.65);
+            -moz-box-shadow: 24px 9px 25px -6px rgba(168,168,168,0.65);
+            box-shadow: 24px 9px 25px -6px rgba(168,168,168,0.65);
+            border: solid 1px gray;
         }
-        table tr:hover td{
-            background-color: lightgrey;
-        }
+      table thead th {
+        background-color: black;
+        color: white;
+      }
+
+      table tfoot td {
+        background-color: lightgray;
+      }
+      table tbody tr:nth-child(even) td{
+        background-color: #f1f1f1;
+      }
+
+      table tbody tr:hover td{
+        background-color: #e9e9e9;
+        cursor: pointer;
+      }
+
+
     </style>
 </head>
 <body>
-    <table sumary="Esta tabela se refere aos alunos da dio" border="1" width="250" cellspacing="5" cellpadding="5" align="center"> 
+    <table sumary="Esta tabela se refere aos alunos da dio" width="250" cellspacing="0" cellpadding="5" align="center" > 
         <!-- é interessante colocar sumary por causa da audiodescrição do site, interessante para deficientes visuais, uma questão de acessibilidade -->
         <caption >Tabela de idades dos alunors da Dio.me</caption>
         
         <thead>          
             <tr>
+                <tr><th colspan="2">Minha Tabela</th></tr>
                 <th title="Nome Completo" >Nome</th>
                 <th title="Idade em anos">Idade</th>
             </tr>
@@ -48,14 +68,12 @@
             </tr>
             
         </tbody>
-        <tfooter>
+        <tfoot>
             <tr>
                 <td>Total</td>
                 <td>6</td>
             </tr>
-        </tfooter>
-    </table>
-    
-    
+        </tfoot>
+    </table>  
 </body>
 </html>
