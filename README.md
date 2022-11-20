@@ -1,0 +1,1 @@
+﻿Esse código é uma demonstração de uma tabela com função de acessibilidade audiovisual. Utilizando o sumary é possível colocar uma descrição voltado para acessibilidade de deficientes visuais. Sem alterar o visual do site.
