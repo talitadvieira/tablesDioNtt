@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Tabelas - Dio.me</title>
+    <style>
+        table tr:nth-child(even){
+            background-color:rgba(248, 175, 230, 0.568);
+        }
+        table tr:hover td{
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <table sumary="Esta tabela se refere aos alunos da dio" border="1" width="250" cellspacing="5" cellpadding="5" align="center"> 
+        <!-- é interessante colocar sumary por causa da audiodescrição do site, interessante para deficientes visuais, uma questão de acessibilidade -->
+        <caption >Tabela de idades dos alunors da Dio.me</caption>
+        
+        <thead>          
+            <tr>
+                <th title="Nome Completo" >Nome</th>
+                <th title="Idade em anos">Idade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr id="1">
+                <td>Talita</td>
+                <td>32</td>
+            </tr>
+            
+            <tr id="2">
+                <td>Maria</td>
+                <td>20</td>
+            </tr>
+            
+            <tr id="3">
+                <td>Manoela</td>
+                <td>30</td>
+            </tr>
+            
+            <tr id="4">
+                <td>Diogo</td>
+                <td>37</td>
+            </tr>
+            
+        </tbody>
+        <tfooter>
+            <tr>
+                <td>Total</td>
+                <td>6</td>
+            </tr>
+        </tfooter>
+    </table>
+    
+    
+</body>
+</html>
